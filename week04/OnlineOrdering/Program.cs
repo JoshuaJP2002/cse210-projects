@@ -1,7 +1,7 @@
 using System;
 using System.Collections.Generic;
 
-// --- Clase Address ---
+
 class Address
 {
     private string street;
@@ -28,7 +28,7 @@ class Address
     }
 }
 
-// --- Clase Customer ---
+
 class Customer
 {
     private string name;
@@ -56,7 +56,7 @@ class Customer
     }
 }
 
-// --- Clase Product ---
+
 class Product
 {
     private string name;
@@ -83,7 +83,7 @@ class Product
     }
 }
 
-// --- Clase Order ---
+
 class Order
 {
     private List<Product> products = new List<Product>();
@@ -107,7 +107,7 @@ class Order
             total += p.GetTotalCost();
         }
 
-        // Shipping cost
+  
         if (customer.IsInUSA())
             total += 5;
         else
@@ -132,7 +132,7 @@ class Order
     }
 }
 
-// --- Programa Principal ---
+
 class Program
 {
     static void Main()
