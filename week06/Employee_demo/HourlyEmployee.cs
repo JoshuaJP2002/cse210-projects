@@ -26,5 +26,10 @@ namespace employee_demo
         {
             _hoursWorked = hoursWorked;
         }
+
+        public override float GetPay()
+        {
+            return _hoursWorked * _payRate;
+        }
     }
 }

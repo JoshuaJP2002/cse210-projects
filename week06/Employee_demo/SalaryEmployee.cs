@@ -15,5 +15,10 @@ namespace employee_demo
         {
             _salary = Salary;
         }
+
+        public override float GetPay()
+        {
+            return _salary / 12;
+        }
     }
 }

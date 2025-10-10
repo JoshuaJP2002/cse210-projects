@@ -20,11 +20,22 @@ namespace employee_demo
 
             DisplayEmployeeInformation(hEmployee);
             DisplayEmployeeInformation(sEmployee);
+
+            List<Employee> employees = new List<Employee>();
+            employees.Add(hEmployee);
+            employees.Add(sEmployee);
+
+            foreach (employee emp in employees)
+            {
+                float pay = emp.GetPay();
+            }
         }
 
         public static void DisplayEmployeeInformation(employee employee)
         {
-            Console.WriteLine($"{employee.Getname()}");
+            float pay = employee.GetPay();
+            Console.WriteLine($"{employee.Getname()} will be paid ${pay}");
+        
         }
 
     }

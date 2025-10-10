@@ -2,7 +2,7 @@ using System;
 
 namespace employee_demo
 {
-    public class Employee
+    public abstract class Employee
     {
         protected string _name;
         protected string _idnumber;
@@ -30,5 +30,8 @@ namespace employee_demo
         {
             _idNumber = idNumber;
         }
+
+        public abstract float GetPay();
+        
     }
 }
